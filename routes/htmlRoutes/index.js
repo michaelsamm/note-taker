@@ -13,7 +13,7 @@ router.get('/notes', (req, res) => {
 
 // Set a catchall for other endpoints to direct to the home page
 router.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../../public.index.html'));
+    res.sendFile(path.join(__dirname, '../../public/index.html'));
 });
 
 module.exports = router;

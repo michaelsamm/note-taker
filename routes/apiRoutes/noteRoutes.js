@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const uniqid = require('uniqid');
-const { createNewNote, validateNote } = require('../../lib/notes'); 
-const { notes } = require('../../db/db.json');
+const { deleteNote, createNewNote, validateNote } = require('../../lib/notes'); 
+var notes = require('../../db/db.json');
 
 // GET /api/notes to return all notes from db.json
 router.get('/notes', (req, res) => {
@@ -23,6 +23,14 @@ router.post('/notes', (req, res) => {
         const note = createNewNote(req.body, notes);
         res.json(note);
     }
-})
+});
+
+// DELETE /api/notes to remove a specific note
+router.delete('/notes/:id', (req, res) => {
+    let results = deleteNote(req.params.id, notes);
+    // Update the notes array to match the deleted set
+    notes = results;
+    res.json(results);
+});
 
 module.exports = router;

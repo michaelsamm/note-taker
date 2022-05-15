@@ -1,43 +1,7 @@
-{
-  "notes": [
-    {
-      "title": "Test Title",
-      "text": "Test text"
-    },
-    {
-      "title": "New Note",
-      "text": "This is the post",
-      "id": "8ny0frgcl37izsga"
-    },
-    {
-      "title": "New Note2",
-      "text": "This is the post2",
-      "id": "8ny0frgcl37j0iet"
-    },
-    {
-      "title": "New Note2",
-      "text": "This is the post2",
-      "id": "8ny0frgcl37j0kdu"
-    },
-    {
-      "title": "New Note2",
-      "text": "This is the post2",
-      "id": "8ny0frgcl37j0lbi"
-    },
-    {
-      "title": "2",
-      "text": "This is the post2",
-      "id": "8ny0frgcl37j1j00"
-    },
-    {
-      "title": "Testing",
-      "text": "Testing a new note to see what happens",
-      "id": "8ny0fwiol37jlqaz"
-    },
-    {
-      "title": "21",
-      "text": "22",
-      "id": "8ny0fp84l37jovpz"
-    }
-  ]
-}
+[
+  {
+    "title": "Test",
+    "text": "Test",
+    "id": "8ny0f5egl37npb5b"
+  }
+]
